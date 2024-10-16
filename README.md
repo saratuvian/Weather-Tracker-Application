@@ -11,17 +11,22 @@ The Weather Tracker Application is a multi-threaded program designed to fetch an
 - Detailed weather information, including temperature, humidity, wind speed, and more.
 
 ## Files
-- `GuiMain.h`: Contains declarations for the GUI rendering functions.
-- `ConnectedApp.cpp`: Entry point for the application, initializes threads for downloading and drawing.
-- `DrawThread.h/cpp`: Defines the drawing thread class responsible for rendering the GUI.
-- `DownloadThread.h/cpp`: Implements the download thread class for fetching weather data from the API.
-- `CommonObject.h`: Contains the shared data structures used for inter-thread communication.
+- **GuiMain.h**: Contains declarations for the GUI rendering functions.
+- **ConnectedApp.cpp**: Entry point for the application, initializes threads for downloading and drawing.
+- **DrawThread.h/cpp**: Defines the drawing thread class responsible for rendering the GUI.
+- **DownloadThread.h/cpp**: Implements the download thread class for fetching weather data from the API.
+- **CommonObject.h**: Contains the shared data structures used for inter-thread communication.
 
 ## Requirements
 - C++17 or later
 - ImGui library for GUI rendering
-- nlohmann/json for JSON parsing
-- httplib for HTTP requests
+- [nlohmann/json](https://github.com/nlohmann/json) for JSON parsing
+- [httplib](https://github.com/yhirose/cpp-httplib) for HTTP requests
+
+## Additional Libraries
+- Make sure to include the `imgui/src` folder in your project for ImGui functionality.
+- Include the `httplib` source files for HTTP support.
+- Download the `nlohmann/json` library and add it to your project for JSON parsing.
 
 ## How to Build
 1. Clone the repository.
@@ -36,3 +41,4 @@ The Weather Tracker Application is a multi-threaded program designed to fetch an
 
 ## License
 This project is licensed under the MIT License.
+
